@@ -19,14 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="myfirst.cpp" />
+    <ClCompile Include="..\Pratice\carrots.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{1EB1B185-FD33-48D6-85AE-7462A80CFDBA}</ProjectGuid>
-    <RootNamespace>Pratice</RootNamespace>
+    <ProjectGuid>{90651F8C-D994-4675-B6C9-B8C8DBA12D38}</ProjectGuid>
+    <RootNamespace>Carrots</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
-    <ProjectName>myfirst</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
