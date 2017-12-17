@@ -26,7 +26,7 @@ int main()
 		<<strlen(charr1)<<endl;
 	cout << "Length  of string  str  after input "
 		<< str.size() << endl;
-
+	
 	cin.get();
 	return 0;
 	
