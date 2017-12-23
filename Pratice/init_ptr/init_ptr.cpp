@@ -7,16 +7,82 @@ int main()
 	int * ptr = &higgens;
 	cout << "Value of  higgens=" << higgens << " : Anddres  of higgens = " << &higgens << endl;
 	cout << "Value of *pt " << *ptr << ";Value of pt =" << ptr << endl;
-	cin.get();
-	return 0;
+	
 
 	// 指针的危险
 	//  long * fellow ;
 	//  *fellow  =233333   指针被指向了 23333
 	
+	///////////////////////////////////////////////
+	// 数组的地址
+	//字面上两个地址相同
+
+     short tell[10];
+	 cout << " before add " << endl;
+	 cout << tell << endl;
+	 cout << &tell <<endl;		
+	 // 当使用tell+1 的时候  --- >  内存地址+2
+	 // 当使用&tell
+	 // tell 指向的是  &tell[0] 是一个 2个字节内存的地址
+	 // &tell 指向的是同一个地址 但是 所代表的是整个数组的内存
+
+	 short(*pt)[10] = &tell;  //指向的是整个数组
+	 short *pt2 = tell;   //指向数组的第一个
+	 cout << "after add one to tell " << endl;
+	 pt = pt + 1;
+	 pt2 = pt2 + 1;
+	 cout << pt << " this is tell after  add one " << endl;
+	 cout << pt2 << " this is tell after  add one " << endl;
+	 cin.get();
+
+	 return 0;
+
 	
 	
 	
-	
+	 //指针小结
+
+	  //声明初始化
+	 //typeName * pointerName;
+
+	 //double *pn;
+	 //char *pc;
+	 //int *pi;
+
+	 //指针赋值
+		//double *pn;
+		//double *pa;
+		//char *pc;
+		//double *bubble =3.2;
+		//pn=&bubble;
+		//pc = new char;
+		//pa =new double[30]; 声明一个30个double的数组
+
+	 //对指针解除引用(获取指针指向的值)   使用*  
+	 //另一种是解除引用 是用数组表示
+	 //bubble[0] 和*bubble 一样  不要用"未初始化的的指针"进行解除引用
+	 //cout << "pn";
+	 //*pc = '8';
+
+	 //区分指针和指针所指向的值
+	 //如果pt是指向int的指针  则  *pt不是指向int的指针而是完全等于一个int类型的变量
+	 //如下
+
+	 //int *pt =new int;
+	 //*pt =S
+
+
+	 //数组名 :
+		//大多数情况下 C++ 数组的第一个元素视为元素的地址
+		//
+	 //指针算数
+	 // int tacos[10] ={5,2,8,4,1,2,2,2,4,,6,8}
+	 // int *pt =tacos;
+	 // pt =pt+1;
+	 // int *pe =&tacos[9];
+	 //pe=pe-1;
+	 // int diff =pe-pf;
+
+
 
 }
