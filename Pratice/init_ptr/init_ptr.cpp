@@ -83,6 +83,36 @@ int main()
 	 //pe=pe-1;
 	 // int diff =pe-pf;
 
+	 //数组的动态编译和静态编译
+
+	 //使用数组声明创建数组时 使用静态编译  则 长度在编译期确定
+	 // int toas[10];
+	 //也可以使用动态数组
+	 //int size;
+	 //cin>> size;
+	 // int  *pt =new int[size];
+	 //delete  [] pt;
+	 //数组表示法和指针表示法
+	 //tacos[0]
+	 // tacos[3]  
+	 //example
+
+	 // int *pt =new int[10];
+	 // *pt =5;
+	 //pt[0]=6;
+	 //pt[9]=44;
+	 //int coast[10];
+	 // *(coast +4) =12;
+
+
+	 //指针和字符串
+
+	 //char flower[10] = "rose";
+	 //cout << flower << "s are red \n";
+
+
+
+
 
 
 }
