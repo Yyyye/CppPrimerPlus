@@ -21,8 +21,14 @@ int main()
 	return 0;
 }
 
-long double  probability(unsigned number,unsigned choice )
+long double  probability(unsigned number,unsigned picks )
 {
-
+	long double result = 1.0;
+	long double n;
+	unsigned p;
+	for (int n = number, p = picks; p > 0; n--, p--)
+		result = result*n / p;
+	return result;
+	
 }
 
